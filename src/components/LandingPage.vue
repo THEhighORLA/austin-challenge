@@ -2,11 +2,9 @@
     <div>
         <div class="content">
             <!-- Logo -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="logo">
-                        <img src="../assets/images/logo.svg">
-                    </div>
+            <div class="col-12">
+                <div class="logo">
+                    <img src="../assets/images/logo.svg">
                 </div>
             </div>
             
@@ -30,7 +28,9 @@
             </div>
             <!-- Contact Form -->
             <div class="row section">
-                
+                <div class="col-12">
+                    <contact-section></contact-section>
+                </div>
             </div>
         </div>
     </div>
@@ -40,6 +40,7 @@
 import MainSection from './MainSection.vue';
 import ServiceSection from './ServiceSection.vue';
 import PricingSection from './PricingSection.vue';
+import ContactSection from './ContactSection.vue'
 
 export default {
     data(){
@@ -51,13 +52,14 @@ export default {
         MainSection,
         ServiceSection,
         PricingSection,
+        ContactSection,
     }
 }
 </script>
 
 <style>
     .section{
-        margin-top: 2rem;
+        margin-top: 10rem;
         align-items: center;
     }
 </style>

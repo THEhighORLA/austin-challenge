@@ -1,6 +1,11 @@
 @font-face {
-    font-family: Manrope;
-    src: url('../styles/manrope-regular.otf');
+    font-family: Manrope-extrabold;
+    src: url('../styles/manrope-extrabold.otf');
+}
+
+@font-face {
+    font-family: Manrope-medium;
+    src: url('../styles/manrope-medium.otf');
 }
 
 * {
@@ -9,7 +14,7 @@
 
 body{
     background-color: #080c20;
-    font-family: 'Manrope';
+    font-family: 'Manrope-medium';
     color: #fff;
 }
 
@@ -24,7 +29,7 @@ body{
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
 .col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
+.col-5 {width: 41.66%;}.contact-form button:hover
 .col-6 {width: 50%;}
 .col-7 {width: 58.33%;}
 .col-8 {width: 66.66%;}
@@ -43,7 +48,9 @@ body{
     clear: both;
     display: table;
 }
-
+.section .col-12{
+    text-align: center;
+}
 .content {
     padding: 3rem 0rem;
 }
@@ -63,9 +70,81 @@ body{
     color: #777F98;
 }
 
+[class*="title-"] {
+    font-family: 'Manrope-extrabold';
+}
+
+.title-1{
+    font-size: 48px;
+    line-height: 56px;
+}
+.title-2{
+    font-size: 40px;
+    line-height: 56px;
+}
+.title-3{
+    font-size: 32px;
+    line-height: 44px;
+}
+.title-4{
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.title-5{
+    font-size: 24px;
+    line-height: 44px;
+}
+
+@media only screen and (max-width: 860px) {
+    [class*="col-"] {
+        float: left;
+        padding: 5px;
+    }  
+    .logo {
+        text-align: left;
+        padding: 0rem 2rem;
+    }
+    .section{
+        margin-top: 4rem;
+    }
+}
+
 @media only screen and (max-width: 480px) {
-        
+    [class*="col-"] {
+        float: inherit;
+        padding: 0px;
+    } 
+    .content{
+        width: 100%;
+    }
     .logo {
         text-align: center;
+    }
+    .section{
+        margin-top: 3rem;
+    }
+    .title-1{
+        font-size: 38px;
+        line-height: 56px;
+    }
+    .title-2{
+        font-size: 30px;
+        line-height: 56px;
+    }
+    .title-3{
+        font-size: 22px;
+        line-height: 44px;
+    }
+    .title-4{
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .description-text{
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 25px;
+        color: #777F98;
     }
 }
